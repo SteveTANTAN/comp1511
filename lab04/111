@@ -1,0 +1,32 @@
+//steve TAN z5237560
+//Date Oct. 2019
+//a programe for reverse number.
+#define star 0
+#define final 99
+#include <stdio.h>
+int main(void) {
+    int scanned_in_value[100] = {0}, counter = 0, terminal = 99; 
+    printf("Enter numbers forwards:\n");
+    
+    int result = scanf("%d", &scanned_in_value[counter]);
+    
+    //scanf the number
+    while (counter <= final && result == 1) {
+        counter++;
+        scanf("%d", &scanned_in_value[counter])
+    }
+    
+    //printf them 
+    printf("Reversed:\n");
+    while (terminal >= 0) {
+        if (result == 0) {
+            terminal--;
+        } else {
+            while (terminal >= 0) {
+                printf("%d\n", scanned_in_value[terminal]);
+                terminal--;
+            }
+        }
+    }
+    return 0;
+}

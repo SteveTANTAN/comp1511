@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+#define secret_value 7
+int main(void) {
+    int roll1, roll2, sum;
+    printf("please input the result of the first die:\n");
+    scanf("%d", &roll1);
+    
+    printf("please input the result of the seconf die:\n");
+    scanf("%d", &roll2);
+    
+    sum=roll1+roll2;
+    
+    printf("the result sum of the two times die is %d\n", sum);
+    
+    if (sum > secret_value)
+    printf("you win\n");
+    
+    else{
+    if (sum == secret_value)
+    printf("you guys both win\n"); 
+    
+    else
+    printf("you lose it\n");
+    
+    }
+
+
+
+
+
+return 0;
+}

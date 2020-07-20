@@ -1,0 +1,11 @@
+// steve Tan 
+// first lab of comp1511
+#include<stdio.h>
+int main(void) {
+    printf("--- ---\n");
+    printf(" @   @\n");
+    printf("   &\n");
+    printf(" \\_/ \n");
+    return 0;
+}
+  

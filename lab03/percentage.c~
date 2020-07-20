@@ -1,0 +1,16 @@
+//steve Tan z5237560
+//Date Oct. 2019
+#include <stdio.h>
+int main(void) {
+    double totalNumber, marksAwarded;
+    double percentage;
+    
+    printf("Enter the total number of marks in the exam: ");
+    scanf("%lf", &totalNumber);
+    printf("Enter the number of marks the student was awarded: ");
+    scanf("%lf", &marksAwarded);
+    
+    percentage = (marksAwarded / totalNumber) * 100;
+    printf("The student scored %.0lf%% in this exam.\n", percentage);
+    return 0;
+}

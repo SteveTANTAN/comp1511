@@ -1,0 +1,39 @@
+//steve Tan z5237560
+//Date OCT. 2019
+#include <stdio.h>
+int main(void) {
+    
+    int first, second, third;
+    printf("Enter integer: ");
+    scanf("%d", &first);
+    printf("Enter integer: ");
+    scanf("%d", &second);
+    printf("Enter integer: ");
+    scanf("%d", &third);
+    
+    int max, mini, middle;
+    if (first >= second) {
+        mini = second;
+        max = first;
+    } else {
+        mini = first;
+        max = second;
+    }
+    
+    if (max >= third) {
+        
+    } else {
+        max = third;
+    }
+    
+    if (mini <= third) {
+    } else {
+        mini = third;
+    }
+    
+    middle = first + second + third -max-mini; 
+     
+    printf("Middle: %d\n", middle);
+    return 0;
+}
+

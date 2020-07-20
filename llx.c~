@@ -1,0 +1,19 @@
+#include<stdio.h>
+#define l 7
+int main(void) {
+    char first, second, third;
+    printf("please enter the first name;\n");
+    scanf("%c", &first);
+    
+    printf("please enter the second and third name;\n");
+    scanf("%c, %c", &second, &third);
+    
+
+    
+    if (first == 7)
+    printf("111111111111111111\n"); 
+
+
+
+return 0;
+}

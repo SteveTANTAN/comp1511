@@ -1,0 +1,60 @@
+//steve Tan z5237560
+//the program for  Rearrange a Vector of Integers.
+#include <stdio.h>
+//the fuction of inputing infor.
+void inpute(int a,int array[]);
+//the fuction of outputing.
+void output(int array1[], int array2[],int n);
+
+int main(void) {
+    int vector_length;
+    //scanf thr vector length.
+    printf("Enter vector length: ");
+    scanf("%d", &vector_length);
+    
+    int vector[vector_length];    
+    int permutation[vector_length];
+    //input the two vectors.
+    printf("Enter vector: ");
+    inpute(vector_length, vector);
+    printf("Enter permutation: ");
+    inpute(vector_length,permutation);    
+    
+    //output the rearrange of a vector.
+    output(vector, permutation,vector_length);
+    return 0;
+}
+// the fuction of input.
+void inpute(int a,int array[]) {
+    int i = 0;
+    while (i < a) {
+    scanf("%d", &array[i]);
+    i++;
+    }
+}
+//the fuction of output.
+void output(int array1[],  int array2[],int n) {
+    int temp = 0, m = 0;
+    
+    //to test if it is one valid permutation.
+    while (temp < n) {
+        if (0 <= array2[temp] && array2[temp]<n) {
+        } else {
+        m++;
+        }
+        temp++;
+    }
+    if (m != 0) {
+    printf("Invalid permutation");
+    //if it correct, print out.
+    } else {
+        temp = 0;
+        while (temp < n) {
+            printf("%d ",array1[array2[temp]]);
+            temp++;    
+        }
+    
+    }
+    printf("\n");
+
+}

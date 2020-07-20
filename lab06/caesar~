@@ -1,0 +1,34 @@
+//5237560 Steve TAN
+//reads characters from its input and writes the characters 
+//to its output encrypted with a Caesar cipher. 
+#include <stdio.h>
+void encrypt(int character);
+int main(void) {
+    int shift;
+    scanf("%d", &shift);
+    int ch = getchar ();
+    while (ch != EOF) {
+        encrypt(ch, );
+        
+        
+        ch = getchar ();
+    }
+    
+
+
+    return 0;
+}
+//the fuction used for transforming.
+void encrypt(int character) {
+    if (character >= 65 && character <= 122 ) {
+        if (character >= 'A' && character <= 'Z') {
+            putchar(character - 'A'+'a');
+        } else if (character >= 'a' && character <= 'z') {
+            putchar(character -'a'+'A');
+        }
+                
+    } else {
+        putchar (character);
+    }
+   
+}

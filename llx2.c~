@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(void) {
+    char a,b,c;
+    printf("please enter first name:\n");
+    scanf("%c",&a);
+    printf("please enter 2 nd name:\n");
+    scanf("%c",&b);
+    printf("please enter 3 rd name:\n");
+    scanf("%c",&c);
+    if (a==l)
+    printf("%c,%c,%c is ugly\n",a,b,c);
+    
+    printf("%c,%C,%C is handsome\n",a,b,c);
+    return 0;
+    }
+    

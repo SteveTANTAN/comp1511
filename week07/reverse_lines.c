@@ -1,0 +1,24 @@
+//Steve Tan z5237560
+//Date 04/11/2019
+#define MAXNUM  256
+#include<stdio.h>
+int main (void) {
+    char ch [MAXNUM];
+    while (fgets(ch, MAXNUM, stdin) != NULL) {
+    
+        int counter = 0;
+        while (ch[counter] != '\0') {
+            counter++;
+        }
+        counter = counter - 2;
+        
+        int loopnum = counter;
+        while (loopnum >= 0) {
+            printf("%c", ch[loopnum]);
+            loopnum --;
+        }
+        printf("\n");
+    }
+    return 0;
+    
+}

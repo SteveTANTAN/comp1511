@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+#include <stdlib.h>
+int main(void) {
+    int number_1, number_2, a,product;
+    scanf("%d %d", &number_1, &number_2);
+    a = number_1 * number_2;
+    product= abs(a);
+     
+    if (product == 0) {
+        printf("zero");   
+    } else {
+        printf(" %d", product);
+    }
+    return 0;
+}
